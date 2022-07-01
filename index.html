@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--titre-->
+    <title>COUR HTML</title>
+    <!--icone-->
+    <link rel="shortcut icone " href="html.png" />
+  </head>
+  <body>
+    <section>
+      <div>
+        <h1>titre - H1</h1>
+        <p>
+          text basique <em>voici text italique</em>
+          <strong>voici text en gras</strong>
+          <span> span ne revien pas a la ligne</span>
+        </p>
+      </div>
+      <div>
+        <h2>les photos - H2</h2>
+        <img src="paysage.jpg" height="200" alt="IMG" />
+      </div>
+      <div>
+        <h3>liste - H3</h3>
+        <ul>
+          <li>ul=unorder liste</li>
+          <li>ul=unorder liste</li>
+          <li>ul=unorder liste</li>
+          <li>ul=unorder liste</li>
+        </ul>
+        <ol>
+          <li>ol=orderliste</li>
+          <li>ol=orderliste</li>
+          <li>ol=orderliste</li>
+          <li>ol=orderliste</li>
+        </ol>
+      </div>
+      <div>
+        <h4>les tableaux - H4</h4>
+        <table border="1">
+          <!-- legende -->
+          <caption>
+            population d'europe
+          </caption>
+          <!-- entete -->
+          <thead>
+            <tr>
+              <th>pays</th>
+              <th>population</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>almagne</td>
+              <td>68M</td>
+            </tr>
+            <tr>
+              <td>espagne</td>
+              <td>47M</td>
+            </tr>
+            <tr>
+              <td>france</td>
+              <td>66M</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h5><i>&#9755;</i> les liens- H5</h5>
+        <a href="https://htmlcheatsheet.com/" target="_blank "
+          >html cheat sheet
+        </a>
+        <br />
+        <a
+          href="https://www.toptal.com/designers/htmlarrows/symbols/"
+          target="_blank"
+          >les icones html</a
+        >
+      </div>
+      <div>
+        <h6>les video - H6</h6>
+        <video src="video.mp4" height="150" autoplay loop muted></video>
+      </div>
+    </section>
+    <!-- les formulaires -->
+    <section>
+      <h2>les formulaires</h2>
+      <form action="/action.php" method="post">
+        <label for="name">nom</label>
+        <input type="text" placeholder="entrer votre nom" id="name" />
+        <br />
+        <label for="age">Age</label>
+        <input type="number" id="age" min="0" max="99" value="18" step="1" />
+
+        <br />
+        <!-- input select -->
+        <label for="gender">genre</label>
+        <select name="" id="gender">
+          <option value="homme">homme</option>
+          <option value="femme">femme</option>
+          <option selected value="femme">femme</option>
+        </select>
+        <br />
+        <!-- input radio -->
+        <div>
+          <input type="radio" id="human" name="type" />
+          <label for="human">humain</label>
+          <br />
+          <input type="radio" id="cat" name="type" />
+          <label for="cat">chat</label>
+
+          <br />
+          <input type="radio" id="dog" name="type" />
+          <label for="dog">dog</label>
+        </div>
+        <textarea
+          cols="30"
+          rows="10"
+          placeholder="entrer votre demande ici"
+        ></textarea>
+        <br />
+        <!-- chekbox -->
+        <label> <input type="checkbox" />accepter les cgv </label>
+        <br />
+        <input type="submit" value="valider" />
+      </form>
+    </section>
+    <br />
+    <!-- footer -->
+    <a href="mailto:chawachii.olfa@gmail.com">ecrivez moi!!!!</a>
+    <br />
+    <a href="notice.txt" download="nom-du-fichier">telecharger la notice</a>
+  </body>
+</html>
